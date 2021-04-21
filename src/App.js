@@ -5,7 +5,7 @@ import './App.css';
 var theVideoID, theServerJSONResp
 if (process.env.NODE_ENV !== 'production') {
   theVideoID = 'cGZF8VcYPJM'
-  theServerJSONResp = 'https://play.aurorav.net/dynamic.json'
+  theServerJSONResp = 'https://small-river-0cef.curt.workers.dev/dynamic.json'
 } else {
   theVideoID = process.env.REACT_APP_VIDEO_ID;
   theServerJSONResp = process.env.REACT_APP_SERVER_RESP;
@@ -45,7 +45,7 @@ class App extends React.Component {
   }
 
   fetchNewPlayerCount(){
-    fetch({theServerJSONResp})
+    fetch(theServerJSONResp)
     .then(resp=>resp.json())
     .then(data=>this.setState({
       playerCount: data.clients + ' players in-game'
