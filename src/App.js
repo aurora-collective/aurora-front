@@ -51,7 +51,7 @@ class App extends React.Component {
       playerCount: data.clients + ' players in-game'
     }))
     .catch(error=>this.setState({
-        playerCount: "Server is Offline"
+        playerCount: "Server is Offline "+error
     }))
   }
 
