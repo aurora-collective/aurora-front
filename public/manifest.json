@@ -1,0 +1,12 @@
+{
+  "short_name": "AuroraRP",
+  "name": "Welcome to Aurora Community Hub",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone"
+}
